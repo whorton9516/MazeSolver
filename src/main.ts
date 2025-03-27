@@ -4,15 +4,14 @@ import * as path from 'path';
 
 function createWindow(): void {
     const mainWindow = new BrowserWindow({
-        width: 1250,
-        height: 1600,
+        width: 750,
+        height: 900,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
         }
     });
 
-    // Now index.html is in the same folder as the compiled main.js.
     mainWindow.loadFile(path.join(__dirname, 'index.html'));
 }
 

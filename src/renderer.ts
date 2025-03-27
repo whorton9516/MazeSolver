@@ -125,7 +125,7 @@ async function drawMaze(): Promise<void> {
             }
         }
     }
-    await new Promise(f => setTimeout(f, 50));
+    await new Promise(f => setTimeout(f, 0));
 }
 
 drawMaze();
